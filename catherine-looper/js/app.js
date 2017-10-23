@@ -59,7 +59,7 @@ function handleClick(event) {
   }
   totalClicks += 1;
   for(let i = 0; i < names.length; i++){
-    if(event.target.id === allProducts[i].name) {
+    if(event.target.id === allProducts[i].name) { //removed duplicate code
       allProducts[i].votes += 1;
       console.log(`${event.target.id} has ${allProducts[i].votes} votes in ${allProducts[i].views} views`);
     }
